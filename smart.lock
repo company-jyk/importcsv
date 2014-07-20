@@ -3,7 +3,8 @@
   "dependencies": {
     "basePackages": {
       "collection2": {},
-      "autoform": {}
+      "autoform": {},
+      "bootstrap-3": {}
     },
     "packages": {
       "collection2": {
@@ -15,6 +16,11 @@
         "git": "https://github.com/aldeed/meteor-autoform.git",
         "tag": "v0.15.1",
         "commit": "723aed684ef9d16e94424cde6389b8e4a03d546e"
+      },
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v3.2.0-1",
+        "commit": "17a63902fc6cf1096c5289d963c66cf28b474727"
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",

@@ -1,6 +1,7 @@
 {
   "packages": {
     "collection2": {},
-    "autoform": {}
+    "autoform": {},
+    "bootstrap-3": {}
   }
 }

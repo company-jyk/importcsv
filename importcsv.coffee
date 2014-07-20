@@ -7,6 +7,9 @@ if Meteor.isClient
   Template.hello.events
     'click input': ->
 
+  Template.books.helpers 
+    books: Books.find {} # This works! So simple
+
 ###
 to import:
 	1 have meteor running

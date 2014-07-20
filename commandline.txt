@@ -1,0 +1,3 @@
+mongoimport -h localhost:3001 -d meteor -c testc -f key,value,other --type csv --file ./pub/hello.csv 
+
+# should use port:3001
