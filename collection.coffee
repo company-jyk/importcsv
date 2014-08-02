@@ -22,6 +22,11 @@ Schema.schema = #new SimpleSchema
 		label:'Last date this book is checked out'
 		optional:true
 	
+	colors:
+		type:String
+		label:'color'
+		allowedValues:['red','green','yellow']
+
 	summary:
 		type: String
 		label:'Brief summary'
