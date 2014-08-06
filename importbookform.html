@@ -1,21 +1,3 @@
-<head>
-  <title>importcsv</title>
-</head>
-
-<body>
-	{{> insertBookForm}}
-	{{> books}}
-  {{> hello}}
-</body>
-
-<template name="hello">
-  <h1>Import data from csv files!</h1>
-  <table class="table">
-  	  {{#each recs}}
-	  	<tr> <td>{{key}}</td> <td>{{value}}</td> </tr> 
-	  {{/each}}
-  </table>
-</template>
 <template name='insertBookForm'>
 	{{>quickForm collection='Books' id='insertBookForm' type='insert'}}
 </template>

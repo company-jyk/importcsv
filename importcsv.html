@@ -16,16 +16,3 @@
 	  {{/each}}
   </table>
 </template>
-<template name='insertBookForm'>
-	{{>quickForm collection='Books' id='insertBookForm' type='insert'}}
-</template>
-
-<template name = 'books'>
-	{{#each books}}
-		{{> updateBookForm}}	
-	{{/each}}
-</template>
-
-<template name='updateBookForm'>
-		{{>quickForm collection='Books' doc=this id='updateBookForm' type='update'}}
-</template>
