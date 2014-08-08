@@ -1,0 +1,26 @@
+<template name='insertBookForm'>
+	{{>quickForm collection='Books' id='insertBookForm' type='insert'}}
+</template>
+
+<template name = 'books'>
+	{{#each books}}
+		{{> updateAutoForm}}
+		{{! > updateBookForm}}
+		{{> bookView}}	
+	{{/each}}
+</template>
+
+<template name='updateBookForm'>
+		{{>quickForm collection='Books' doc=this id='updateBookForm' type='update'}}
+</template>
+<template name='updateAutoForm'>
+		{{#autoForm collection='Books' doc=this id='updateBookForm' type='update'}}
+			{{> afQuickField name='title' value= title}}
+			{{> afQuickField name='copies' value = copies}}
+			<button type='submit'>Update</button>
+		{{/autoForm}}
+</template>
+
+<template name = 'bookView'>
+	<p>{{title}} {{author}} {{copies}}</p>
+</template>

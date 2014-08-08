@@ -1,0 +1,13 @@
+head
+  title importcsv
+
+body
+  +insertBookForm
+  +books
+  +hello
+
+template(name="hello") 
+  h1 Import data from csv files!
+  table class="table"
+    each recs
+      <tr> <td>{{key}}</td> <td>{{value}}</td> </tr> 
